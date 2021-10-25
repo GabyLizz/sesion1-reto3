@@ -7,21 +7,12 @@ function Insercion() {
     //console.log(aleatorio);
     numeros.push(aleatorio);
   }
-  let n, j, temp;
+  var n, i, k, aux;
   n = numeros.length;
   console.log(numeros); // Mostramos, por consola, la numeros desordenada
-  // Algoritmo de burbuja
-  for (let i = 1; i < l; i++) {
-    j = i;
-    temp = numeros[i];
-    while (j > 0 && numeros[j - 1] > temp) {
-      numeros[j] = numeros[j - 1];
-      j--;
-    }
-    numeros[j] = temp;
-  }
+  // Algoritmo de Insercion
 
   console.log(numeros); // Mostramos, por consola, la numeros ya ordenada
 }
 
-module.export = Insercion;
+module.exports = Insercion;

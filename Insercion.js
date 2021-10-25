@@ -10,7 +10,7 @@ const Insercion = (arr) => {
   const l = numeros.length;
   let j, temp;
   //Mostramos los numeros desordenados
-  console.log(numeros);
+  //console.log(numeros);
 
   for (let i = 1; i < l; i++) {
     j = i;
@@ -22,7 +22,7 @@ const Insercion = (arr) => {
     arr[j] = temp;
   }
 
-  console.log(arr);
+  // console.log(arr);
 };
 
 module.export = Insercion;

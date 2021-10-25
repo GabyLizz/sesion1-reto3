@@ -1,5 +1,5 @@
-const Burbuja = require('./Burbuja');
-const Insercion = require('./Insercion');
+const Burbuja = require('./OrdenPorBurbuja');
+const Insercion = require('./OrdenPorInsercion');
 
 console.log('Ordenamiento tipo Burbuja:');
 Burbuja();

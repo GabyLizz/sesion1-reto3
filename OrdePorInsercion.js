@@ -9,7 +9,8 @@ function Insercion() {
   }
   var n, j, temp;
   n = numeros.length;
-  console.log(numeros); // Mostramos, por consola, la numeros desordenada
+  console.log('Números antes de ordenar: ');
+  console.log(numeros); // Mostramos, por consola,numeros desordenados
   // Algoritmo de Insercion
   for (let i = 1; i < n; i++) {
     j = i;
@@ -20,7 +21,8 @@ function Insercion() {
     }
     numeros[j] = temp;
   }
-  console.log(numeros); // Mostramos, por consola, la numeros ya ordenada
+  console.log('Números después de ordenar: ');
+  console.log(numeros); // Mostramos, por consola, numeros ordenados
 }
 
 module.exports = Insercion;

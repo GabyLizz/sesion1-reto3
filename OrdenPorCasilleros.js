@@ -18,7 +18,7 @@ function Casilleros() {
 
   n = numeros.length;
   //Se agregan los elementos a los casilleros correspondientes
-  for (l = 1; l < n; l++) {
+  for (l = 0; l < n; l++) {
     if (numeros[l] <= 10) {
       casillero1.push(numeros[l]);
     } else if (numeros[l] > 10 && numeros[l] <= 20) {
@@ -61,8 +61,8 @@ function Casilleros() {
   //Ordenamiento del casillero 3
   c3 = casillero3.length;
   // Algoritmo de burbuja
-  for (k = 1; k < c2; k++) {
-    for (i = 0; i < c2 - k; i++) {
+  for (k = 1; k < c3; k++) {
+    for (i = 0; i < c3 - k; i++) {
       if (casillero3[i] > casillero3[i + 1]) {
         aux = casillero3[i];
         casillero3[i] = casillero3[i + 1];

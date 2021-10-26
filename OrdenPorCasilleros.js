@@ -14,6 +14,8 @@ function Casilleros() {
 
   var n, k, c1, c2, c3, i, aux;
 
+  console.log('Números antes de ordenar: ' + numeros);
+
   n = numeros.length;
   //Se agregan los elementos a los casilleros correspondientes
   for (l = 1; l < n; l++) {
@@ -26,9 +28,9 @@ function Casilleros() {
     }
   }
 
-  console.log('casillero 1:  ' + casillero1);
-  console.log('casillero 2:  ' + casillero2);
-  console.log('casillero 3:  ' + casillero3);
+  //console.log('casillero 1:  ' + casillero1);
+  //console.log('casillero 2:  ' + casillero2);
+  //console.log('casillero 3:  ' + casillero3);
 
   //Ordenamiento del casillero 1
   c1 = casillero1.length;
@@ -70,7 +72,7 @@ function Casilleros() {
   }
 
   console.log(
-    `Números Ordenados por Metodo de Casilleros: ${casillero1},${casillero2},${casillero3}`
+    `Números antes de ordenar: ${casillero1},${casillero2},${casillero3}`
   );
 }
 

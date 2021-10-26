@@ -37,6 +37,6 @@ function Casilleros() {
   }
   console.log('casillero 1:  ' + casillero1);
   console.log('casillero 2:  ' + casillero2);
-  console.log('casillero 3:  ' + casillero2);
+  console.log('casillero 3:  ' + casillero3);
 }
 module.exports = Casilleros;

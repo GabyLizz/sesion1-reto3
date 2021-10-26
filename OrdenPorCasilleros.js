@@ -15,11 +15,11 @@ function Casilleros() {
 
   n = numeros.length;
 
-  for (l = 1; i < n; l++) {
-    if (numeros[i] <= 5) {
-      casillero1.push(numeros[i]);
+  for (l = 1; l < n; l++) {
+    if (numeros[l] <= 5) {
+      casillero1.push(numeros[l]);
     } else {
-      casillero2.push(numeros[i]);
+      casillero2.push(numeros[l]);
     }
   }
 

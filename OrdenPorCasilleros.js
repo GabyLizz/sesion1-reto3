@@ -12,7 +12,7 @@ function Casilleros() {
     numeros.push(aleatorio);
   }
 
-  var n, c1, c2, l;
+  var n, c1, k, c2, l, c3;
 
   n = numeros.length;
   //Se agregan los elementos a los casilleros correspondientes
@@ -25,13 +25,35 @@ function Casilleros() {
       casillero3.push(numeros[l]);
     }
   }
-
+  //Ordenamiento del casillero 1
   for (k = 1; k < n; k++) {
-    for (i = 0; i < n - k; i++) {
-      if (numeros[i] > numeros[i + 1]) {
-        aux = numeros[i];
-        numeros[i] = numeros[i + 1];
-        numeros[i + 1] = aux;
+    for (c1 = 0; c1 < n - k; c1++) {
+      if (casillero1[c1] > casillero1[c1 + 1]) {
+        aux = casillero1[c1];
+        casillero1[c1] = casillero1[c1 + 1];
+        casillero1[c1 + 1] = aux;
+      }
+    }
+  }
+
+  //Ordenamiento del casillero 2
+  for (k = 1; k < n; k++) {
+    for (c2 = 0; c2 < n - k; c2++) {
+      if (casillero1[c2] > casillero1[c2 + 1]) {
+        aux = casillero1[c2];
+        casillero1[c2] = casillero1[c2 + 1];
+        casillero1[c2 + 1] = aux;
+      }
+    }
+  }
+
+  //Ordenamiento del casillero 3
+  for (k = 1; k < n; k++) {
+    for (c3 = 0; c3 < n - k; c3++) {
+      if (casillero1[c3] > casillero1[c3 + 1]) {
+        aux = casillero1[c3];
+        casillero1[c3] = casillero1[c3 + 1];
+        casillero1[c3 + 1] = aux;
       }
     }
   }
@@ -39,4 +61,5 @@ function Casilleros() {
   console.log('casillero 2:  ' + casillero2);
   console.log('casillero 3:  ' + casillero3);
 }
+
 module.exports = Casilleros;

@@ -56,7 +56,7 @@ function Casilleros() {
     }
   }
   console.log(
-    `Números Ordenados por Metodo de Casilleros:  ' ${casillero1} , ${casillero2} casillero2 `
+    `Números Ordenados por Metodo de Casilleros: ${casillero1},${casillero2}`
   );
 }
 

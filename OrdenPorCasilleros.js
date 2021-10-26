@@ -12,7 +12,7 @@ function Casilleros() {
   }
 
   var n, c1, c2, l;
-  --i, k, aux;
+
   n = numeros.length;
 
   for (l = 1; i < n; l++) {

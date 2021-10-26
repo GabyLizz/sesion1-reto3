@@ -10,3 +10,5 @@ Insercion();
 
 console.log('Ordenamiento tipo Casilleros:');
 Casilleros();
+
+console.log('Hola, desde ejecucion con Nodemon');

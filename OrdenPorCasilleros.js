@@ -6,8 +6,8 @@ function Casilleros() {
   var casillero2 = [];
   var casillero3 = [];
 
-  for (let i = 0; i <= 30; i++) {
-    let aleatorio = random(1, 10, 0);
+  for (let i = 0; i <= 15; i++) {
+    let aleatorio = random(1, 35, 0);
     //console.log(aleatorio);
     numeros.push(aleatorio);
   }

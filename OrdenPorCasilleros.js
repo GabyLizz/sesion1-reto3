@@ -55,8 +55,22 @@ function Casilleros() {
       }
     }
   }
+
+  //Ordenamiento del casillero 3
+  c3 = casillero3.length;
+  // Algoritmo de burbuja
+  for (k = 1; k < c2; k++) {
+    for (i = 0; i < c2 - k; i++) {
+      if (casillero3[i] > casillero3[i + 1]) {
+        aux = casillero3[i];
+        casillero3[i] = casillero3[i + 1];
+        casillero3[i + 1] = aux;
+      }
+    }
+  }
+
   console.log(
-    `Números Ordenados por Metodo de Casilleros: ${casillero1},${casillero2}`
+    `Números Ordenados por Metodo de Casilleros: ${casillero1},${casillero2},${casillero3}`
   );
 }
 

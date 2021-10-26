@@ -9,6 +9,7 @@ function Burbuja() {
   }
   var n, i, k, aux;
   n = numeros.length;
+  console.log('Números antes de ordenar: ');
   console.log(numeros); // Mostramos, por consola, la numeros desordenada
   // Algoritmo de burbuja
   for (k = 1; k < n; k++) {
@@ -20,7 +21,7 @@ function Burbuja() {
       }
     }
   }
-
+  console.log('Números después de ordenar: ');
   console.log(numeros); // Mostramos, por consola, la numeros ya ordenada
 }
 module.exports = Burbuja;

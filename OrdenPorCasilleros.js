@@ -42,7 +42,22 @@ function Casilleros() {
       }
     }
   }
-  console.log('casillero 1:  ' + casillero1);
+
+  //Ordenamiento del casillero 2
+  c2 = casillero2.length;
+  // Algoritmo de burbuja
+  for (k = 1; k < c2; k++) {
+    for (i = 0; i < c2 - k; i++) {
+      if (casillero2[i] > casillero2[i + 1]) {
+        aux = casillero2[i];
+        casillero2[i] = casillero2[i + 1];
+        casillero2[i + 1] = aux;
+      }
+    }
+  }
+  console.log(
+    `Números Ordenados por Metodo de Casilleros:  ' ${casillero1} , ${casillero2} casillero2 `
+  );
 }
 
 module.exports = Casilleros;

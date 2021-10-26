@@ -25,6 +25,8 @@ function Casilleros() {
       casillero3.push(numeros[l]);
     }
   }
+
+  n = casillero1.length;
   //Ordenamiento del casillero 1
   for (k = 1; k < n; k++) {
     for (c1 = 0; c1 < n - k; c1++) {
@@ -35,7 +37,7 @@ function Casilleros() {
       }
     }
   }
-
+  n = casillero2.length;
   //Ordenamiento del casillero 2
   for (k = 1; k < n; k++) {
     for (c2 = 0; c2 < n - k; c2++) {
@@ -46,7 +48,7 @@ function Casilleros() {
       }
     }
   }
-
+  n = casillero3.length;
   //Ordenamiento del casillero 3
   for (k = 1; k < n; k++) {
     for (c3 = 0; c3 < n - k; c3++) {

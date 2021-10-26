@@ -12,7 +12,7 @@ function Casilleros() {
     numeros.push(aleatorio);
   }
 
-  var n, c1, k, c2, l, c3;
+  var n, k;
 
   n = numeros.length;
   //Se agregan los elementos a los casilleros correspondientes
@@ -29,33 +29,33 @@ function Casilleros() {
   n = casillero1.length;
   //Ordenamiento del casillero 1
   for (k = 1; k < n; k++) {
-    for (c1 = 0; c1 < n - k; c1++) {
-      if (casillero1[c1] > casillero1[c1 + 1]) {
-        aux = casillero1[c1];
-        casillero1[c1] = casillero1[c1 + 1];
-        casillero1[c1 + 1] = aux;
+    for (l = 0; l < n - k; l++) {
+      if (casillero1[l] > casillero1[l + 1]) {
+        aux = casillero1[l];
+        casillero1[l] = casillero1[l + 1];
+        casillero1[l + 1] = aux;
       }
     }
   }
   n = casillero2.length;
   //Ordenamiento del casillero 2
   for (k = 1; k < n; k++) {
-    for (c2 = 0; c2 < n - k; c2++) {
-      if (casillero1[c2] > casillero1[c2 + 1]) {
-        aux = casillero1[c2];
-        casillero1[c2] = casillero1[c2 + 1];
-        casillero1[c2 + 1] = aux;
+    for (l = 0; l < n - k; l++) {
+      if (casillero1[l] > casillero1[l + 1]) {
+        aux = casillero1[l];
+        casillero1[l] = casillero1[l + 1];
+        casillero1[l + 1] = aux;
       }
     }
   }
   n = casillero3.length;
   //Ordenamiento del casillero 3
   for (k = 1; k < n; k++) {
-    for (c3 = 0; c3 < n - k; c3++) {
-      if (casillero1[c3] > casillero1[c3 + 1]) {
-        aux = casillero1[c3];
-        casillero1[c3] = casillero1[c3 + 1];
-        casillero1[c3 + 1] = aux;
+    for (l = 0; l < n - k; l++) {
+      if (casillero1[l] > casillero1[l + 1]) {
+        aux = casillero1[l];
+        casillero1[l] = casillero1[l + 1];
+        casillero1[l + 1] = aux;
       }
     }
   }
